@@ -331,6 +331,11 @@ Gameball.redeemCoupon({
     else console.log(res)
 })
 ```
+### Handling exceptions
+Unsuccessful requests raise exceptions. The raised exception will reflect the sort of error that occurred with appropriate message and error code . Please refer to the  [Gameball API docs](https://docs.gameball.co).
+## Contribution
+---
+The master branch of this repository contains the latest stable release of the SDK.
 ## Contact
 ---
 For usage questions\suggestions drop us an email at support[ at ]gameball.co. Please report any bugs as issues.
