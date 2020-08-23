@@ -1,7 +1,7 @@
 
 # **Gameball NodeJS SDK**
 ---
-This repository contains the open source SDK for integrating Gameball's API into your NodeJs app. The Gameball NodeJS SDK provides convinient access to the Gameball API from applications written in the JavaScript langauage. 
+The Gameball NodeJS SDK provides convinient access to the Gameball API from applications written in the JavaScript langauage. 
 ## Documentation
 ---
 Please refer to the  [Gameball API docs](https://docs.gameball.co).
@@ -77,6 +77,14 @@ Gameball.initializePlayer({
 Gameball.getPlayerInfo({
         "playerUniqueId":"1597247015986"
 },
+        function (err, res){
+                if(err) console.log(err)
+                else console.log(res)
+})
+
+Gameball.getPlayerInfo({
+        "playerUniqueId":"1597247015986"
+},      Gameball.language.German,
         function (err, res){
                 if(err) console.log(err)
                 else console.log(res)
@@ -333,9 +341,6 @@ Gameball.redeemCoupon({
 ```
 ### Handling exceptions
 Unsuccessful requests raise exceptions. The raised exception will reflect the sort of error that occurred with appropriate message and error code . Please refer to the  [Gameball API docs](https://docs.gameball.co).
-## Contribution
----
-The master branch of this repository contains the latest stable release of the SDK.
 ## Contact
 ---
 For usage questions\suggestions drop us an email at support[ at ]gameball.co. Please report any bugs as issues.
