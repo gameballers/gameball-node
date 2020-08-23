@@ -1,9 +1,9 @@
 var gameball = require('../../lib/gameball')
 var Gameball = new gameball()
 Gameball.setUp({
-       'apiKey':'your_api_key',
-       'transactionKey':'your_transaction_key'
-   });
+    'apiKey':'your_api_key',
+    'transactionKey':'your_transaction_key'
+});
 
 Gameball.initializePlayer({
      'playerUniqueId': 'player_unique_id',

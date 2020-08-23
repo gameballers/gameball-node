@@ -6,15 +6,6 @@ Gameball.setUp({
     'transactionKey':'your_transaction_key'
 });
 
-Gameball.sendEvent({
-    "events":{
-        "Buy":{}
-        },
-    "playerUniqueId":'player_unique_id'
-},function (err, res){
-    if(err) console.log(err)
-    else console.log(res)
-})
 
  Gameball.sendEvent(
     {
@@ -24,7 +15,6 @@ Gameball.sendEvent({
                     "total_price":2000
              },
              "view_product_page":{},
-             "Buy":{}
      }
 },function (err, res){
     if(err) console.log(err)

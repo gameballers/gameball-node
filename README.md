@@ -10,7 +10,7 @@ Please refer to the  [Gameball API docs](https://docs.gameball.co).
 You don't need this source code unless you want to modify the SDK. If you just
 want to use the SDK, just run:
 ```js
-npm install gameball-nodejs-sdk
+npm install gameball
 ```
 ## Usage
 ---
@@ -18,7 +18,7 @@ The SDK needs to be configured with your account's API & Transaction keys availa
 
 Require 'gameball-nodejs-sdk' in your file
 ```js
-var gameball = require('gameball-nodejs-sdk')
+var gameball = require('gameball')
 ```
 Create a handler using the api key and transaction key (optional field), then call commands on it.
 ```js
@@ -77,6 +77,14 @@ Gameball.initializePlayer({
 Gameball.getPlayerInfo({
         "playerUniqueId":"1597247015986"
 },
+        function (err, res){
+                if(err) console.log(err)
+                else console.log(res)
+})
+
+Gameball.getPlayerInfo({
+        "playerUniqueId":"1597247015986"
+},      Gameball.language.German,
         function (err, res){
                 if(err) console.log(err)
                 else console.log(res)

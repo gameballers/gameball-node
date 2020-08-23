@@ -20,7 +20,7 @@ Gameball.createReferral({
     "playerAttributes":{
         displayName: "John",
         firstName: "John",
-        lastName:"Snow"
+        lastName: "Snow"
     }
 }, function (err, res){
     if(err) console.log(err)
