@@ -18,7 +18,7 @@ The SDK needs to be configured with your account's API & Transaction keys availa
 
 Require 'gameball-nodejs-sdk' in your file
 ```js
-var gameball = require('gameball-nodejs-sdk')
+var gameball = require('gameball')
 ```
 Create a handler using the api key and transaction key (optional field), then call commands on it.
 ```js
@@ -331,11 +331,6 @@ Gameball.redeemCoupon({
     else console.log(res)
 })
 ```
-### Handling exceptions
-Unsuccessful requests raise exceptions. The raised exception will reflect the sort of error that occurred with appropriate message and error code . Please refer to the  [Gameball API docs](https://docs.gameball.co).
-## Contribution
----
-The master branch of this repository contains the latest stable release of the SDK.
 ## Contact
 ---
 For usage questions\suggestions drop us an email at support[ at ]gameball.co. Please report any bugs as issues.
