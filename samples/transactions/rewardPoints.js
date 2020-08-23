@@ -6,7 +6,7 @@ Gameball.setUp({
 });
 
 Gameball.rewardPoints({
-    "playerUniqueId":"pplayer_unique_id",
+    "playerUniqueId":"player_unique_id",
     "transactionId": "transaction_unique_id",
     "amount":5000
 

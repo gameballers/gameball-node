@@ -6,7 +6,7 @@ Gameball.setUp({
 });
 
 Gameball.validateCoupon({
-    "playerUniqueId":"1597612880455",
+    "playerUniqueId":"player_unique_id",
     "code":"1"
 },function (err, res){
     if(err) console.log(err)

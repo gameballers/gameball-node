@@ -6,7 +6,7 @@ Gameball.setUp({
 });
 
 Gameball.sendAction({
-    "playerUniqueId":"player's_unique_id",
+    "playerUniqueId":"player_unique_id",
     "events":{
             "place_order":{
                     "total_price":2000
