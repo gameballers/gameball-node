@@ -1,26 +1,26 @@
 var gameball = require('../../lib/gameball')
 var Gameball = new gameball()
 Gameball.setUp({
-    'apiKey':'7c7636658209418c9a82306a421f76a5',
-    'transactionKey':'26e1967d89114388bdd1772587c336c8'
+    'apiKey':'your_api_key',
+    'transactionKey':'your_transaction_key'
 });
 
-/* Gameball.createReferral({
-    "playerCode": '_6IF971D1A14Mu',
-    'playerUniqueId':Date.now()
+Gameball.createReferral({
+    "playerCode": 'player_code',
+    'playerUniqueId':'player_unique_id'
 }, function (err, res){
     if(err) console.log(err)
     else console.log(res)
-}) */
+})
 
 
 Gameball.createReferral({
-    "playerCode": 'EDC530AFdTxy1L',
-    'playerUniqueId': Date.now(),
+    "playerCode": 'player_code',
+    'playerUniqueId': 'player_unique_id',
     "playerAttributes":{
-        displayName: "referral_",
-        firstName: "testing",
-        lastName:"referral"
+        displayName: "John",
+        firstName: "John",
+        lastName:"Snow"
     }
 }, function (err, res){
     if(err) console.log(err)

@@ -1,23 +1,24 @@
 var gameball = require('../../lib/gameball')
 var Gameball = new gameball()
+
 Gameball.setUp({
-    'apiKey':'7c7636658209418c9a82306a421f76a5',
-    'transactionKey':'26e1967d89114388bdd1772587c336c8'
+    'apiKey':'your_api_key',
+    'transactionKey':'your_transaction_key'
 });
 
-/* Gameball.sendEvent({
+Gameball.sendEvent({
     "events":{
         "Buy":{}
         },
-    "playerUniqueId":'1596487841748'
+    "playerUniqueId":'player_unique_id'
 },function (err, res){
     if(err) console.log(err)
     else console.log(res)
-}) */
+})
 
- /* Gameball.sendEvent(
+ Gameball.sendEvent(
     {
-    'playerUniqueId': '1596487841748',
+    'playerUniqueId': 'player_unique_id',
     'events':{
             "place_order":{
                     "total_price":2000
@@ -28,9 +29,9 @@ Gameball.setUp({
 },function (err, res){
     if(err) console.log(err)
     else console.log(res)
-}) */
+})
 
-/* Gameball.sendEvent(
+Gameball.sendEvent(
     {
        "events":{
           "place_order":{
@@ -42,26 +43,25 @@ Gameball.setUp({
           },
           "review":{}
        },
-       "playerUniqueId":"1597612880455"
+       "playerUniqueId":'player_unique_id'
     },
     function (err, res){
         if(err) console.log(err)
         else console.log(res)
-    }) */
+    })
 
-/* Gameball.sendEvent(
+Gameball.sendEvent(
     {
        "events":{
           "reserve":{
              "rooms":2
           }
        },
-       "playerUniqueId":"1597612880455",
+       "playerUniqueId":'player_unique_id',
        "playerAttributes":{
           "displayName":"Jon Snow",
           "email":"jon.snow@example.com",
           "dateOfBirth":"1980-09-19T00:00:00.000Z",
-          "joinDate":"2019-09-19T21:06:29.158Z",
           "custom":{
               'isGraduated': true
           }
@@ -70,14 +70,14 @@ Gameball.setUp({
     function (err, res){
         if(err) console.log(err)
         else console.log(res)
-    }) */
+    })
 
 
 Gameball.sendEvent(
     {"events":{
             "view_product_page":{}
             },
-    "playerUniqueId": '1597612880455',
+    "playerUniqueId": 'player_unique_id',
     "isMessageTrigger": true
   
      
