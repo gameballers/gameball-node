@@ -1,12 +1,12 @@
 var gameball = require('../../lib/gameball')
 var Gameball = new gameball()
 Gameball.setUp({
-    'apiKey':'7c7636658209418c9a82306a421f76a5',
-    'transactionKey':'26e1967d89114388bdd1772587c336c8'
+    'apiKey':'your_api_key',
+    'transactionKey':'your_transaction_key'
 });
 
 Gameball.sendAction({
-    "playerUniqueId":"1597612880455",
+    "playerUniqueId":"player's_unique_id",
     "events":{
             "place_order":{
                     "total_price":2000

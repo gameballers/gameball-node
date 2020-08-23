@@ -1,14 +1,14 @@
 var gameball = require('../../lib/gameball')
 var Gameball = new gameball()
 Gameball.setUp({
-    'apiKey':'7c7636658209418c9a82306a421f76a5',
-    'transactionKey':'26e1967d89114388bdd1772587c336c8'
+    'apiKey':'your_api_key',
+    'transactionKey':'your_transaction_key'
 });
 
 Gameball.redeemPoints({
-    "playerUniqueId":"1597612880455",
-    "holdReference":'e620b471-93dd-4456-bf8c-68708d71de20',
-    "transactionId": "redeemTransID1"
+    "playerUniqueId":"player_unique_id",
+    "holdReference":'hold_reference_from_hold_transaction',
+    "transactionId": "transaction_unique_id"
 },function (err, res){
     if(err) console.log(err)
     else console.log(res)
