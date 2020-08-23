@@ -6,9 +6,9 @@ Gameball.setUp({
 });
 
 Gameball.redeemPoints({
-    "playerUniqueId":"player_unique_id",
-    "holdReference":'hold_reference_from_hold_transaction',
-    "transactionId": "transaction_unique_id"
+    "playerUniqueId":"",
+    "holdReference":'hold_reference_obtained_from_hold_points_transaction',
+    "transactionId": "unique_transaction_id"
 },function (err, res){
     if(err) console.log(err)
     else console.log(res)
