@@ -10,7 +10,7 @@ Please refer to the  [Gameball API docs](https://docs.gameball.co).
 You don't need this source code unless you want to modify the SDK. If you just
 want to use the SDK, just run:
 ```js
-npm install gameball-nodejs-sdk
+npm install gameball
 ```
 ## Usage
 ---
