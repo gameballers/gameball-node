@@ -1,6 +1,6 @@
 {
-  "name": "alpha2sdk",
-  "version": "0.1.1",
+  "name": "gameball",
+  "version": "0.1.0",
   "description": "Gameball NodeJS SDK",
   "main": "index.js",
   "directories": {
