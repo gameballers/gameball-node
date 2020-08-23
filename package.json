@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gameballers@dev.azure.com/gameballers/GB-NodeJs-SDK/_git/GB-NodeJs-SDK"
+    "url": "https://github.com/gameballers/gameball-node.git"
   },
   "bin": {
     "techietime": "index.js"
