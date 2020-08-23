@@ -1,0 +1,32 @@
+{
+  "name": "alpha2sdk",
+  "version": "0.1.1",
+  "description": "Gameball NodeJS SDK",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "gameball",
+    "nodejs",
+    "node",
+    "sdk"
+  ],
+  "author": "Gameball <omar.alfar@gameball.co>",
+  "license": "ISC",
+  "dependencies": {
+    "https": "^1.0.0",
+    "sha1": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gameballers@dev.azure.com/gameballers/GB-NodeJs-SDK/_git/GB-NodeJs-SDK"
+  },
+  "bin": {
+    "techietime": "index.js"
+  },
+  "devDependencies": {}
+}
