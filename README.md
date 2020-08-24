@@ -12,6 +12,11 @@ want to use the SDK, just run:
 ```js
 npm install gameball
 ```
+## Dependencies 
+Download sha1 package using the following command.
+```js
+npm install sha1
+```
 ## Usage
 ---
 The SDK needs to be configured with your account's API & Transaction keys available in your [Gameball Dashboard](https://help.gameball.co/en/articles/3467114-get-your-account-integration-details-api-key-and-transaction-key)
