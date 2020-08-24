@@ -12,7 +12,7 @@ want to use the SDK, just run:
 ```js
 npm install gameball
 ```
-## Dependencies 
+### Dependencies 
 Download sha1 package using the following command.
 ```js
 npm install sha1
