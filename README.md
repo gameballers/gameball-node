@@ -7,13 +7,12 @@ This repository contains the open source SDK for integrating Gameball's API into
 Please refer to the  [Gameball API docs](https://docs.gameball.co).
 ## Installation
 ---
-You don't need this source code unless you want to modify the SDK. If you just
-want to use the SDK, just run:
+You don't need this source code unless you want to modify the SDK. For using the SDK, just run:
 ```js
 npm install gameball
 ```
 ### Dependencies 
-Download sha1 package using the following command.
+Download sha1 package required for computing the message validation hash using the following command.
 ```js
 npm install sha1
 ```
@@ -21,7 +20,7 @@ npm install sha1
 ---
 The SDK needs to be configured with your account's API & Transaction keys available in your [Gameball Dashboard](https://help.gameball.co/en/articles/3467114-get-your-account-integration-details-api-key-and-transaction-key)
 
-Require 'gameball-nodejs-sdk' in your file
+Require 'gameball' in your file
 ```js
 var gameball = require('gameball')
 ```
@@ -36,7 +35,7 @@ Gameball.setUp({
 ```
 You can also directly pass the apiKey and transactionKey through the Gameball constructor.
 ```js
-var Gameball = new gameball(apiKey, transactionKey)
+var Gameball = new gameball('your_api_key', 'your_transaction_key')
 ```
 ### Commands:
 ```js
@@ -62,19 +61,20 @@ Gameball.rewardPoints(RewardPointsRequest, callback) //rewards a player with poi
 #### Creating a Player 
 ```js
 Gameball.initializePlayer({
-   "playerUniqueId": "player123",
-   "playerAttributes":{
-      "displayName":" Jon Snow",
-      "email":"jon.snow@example.com",
-      "dateOfBirth":"1980-09-19T00:00:00.000Z",
-      "custom": {
-        "isGraduated": false,
-        "location": "Egypt, Cairo"
+        "playerUniqueId": "player123",
+        "playerAttributes":{
+        "displayName":" Jon Snow",
+        "email":"jon.snow@example.com",
+        "dateOfBirth":"1980-09-19T00:00:00.000Z",
+        "custom": {
+                "isGraduated": false,
+                "location": "Egypt, Cairo"
              }
+        }
 }, 
         function (err, res){
-         if(err) console.log(err)
-         else console.log(res)
+                if(err) console.log(err)
+                else console.log(res)
 })
 ```
 #### Getting a Player's Information
@@ -89,7 +89,9 @@ Gameball.getPlayerInfo({
 
 Gameball.getPlayerInfo({
         "playerUniqueId":"1597247015986"
-},      Gameball.language.German,
+},      
+        Gameball.language.German,
+        
         function (err, res){
                 if(err) console.log(err)
                 else console.log(res)
@@ -316,32 +318,35 @@ Gameball.reverseHold({
 #### Creating a Coupon
 ```js
 Gameball.createCoupon({
-    "playerUniqueId":"1597100928071",
-    "code": "1",
-    "value":1000.0
-},function (err, res){
-    if(err) console.log(err)
-    else console.log(res)
+        "playerUniqueId":"1597100928071",
+        "code": "1",
+        "value":1000.0
+},
+        function (err, res){
+                if(err) console.log(err)
+                else console.log(res)
 })
 ```
 #### Validating a Coupon
 ```js
 Gameball.validateCoupon({
-    "playerUniqueId":"1597100928071",
-    "code":"1"
-},function (err, res){
-    if(err) console.log(err)
-    else console.log(res)
+        "playerUniqueId":"1597100928071",
+        "code":"1"
+},
+        function (err, res){
+                if(err) console.log(err)
+                else console.log(res)
 })
 ```
 #### Redeeming a Coupon
 ```js
 Gameball.redeemCoupon({
-    "playerUniqueId":"1597100928071",
-    "code":1
-},function (err, res){
-    if(err) console.log(err)
-    else console.log(res)
+        "playerUniqueId":"1597100928071",
+        "code":1
+},
+        function (err, res){
+                if(err) console.log(err)
+                else console.log(res)
 })
 ```
 ### Handling exceptions
@@ -351,4 +356,4 @@ Unsuccessful requests raise exceptions. The raised exception will reflect the so
 The master branch of this repository contains the latest stable release of the SDK.
 ## Contact
 ---
-For usage questions\suggestions drop us an email at support[ at ]gameball.co. Please report any bugs as issues.
+For usage questions\suggestions drop us an email at support@gameball.co. Please report any bugs as issues.
