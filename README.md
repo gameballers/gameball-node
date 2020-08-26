@@ -1,7 +1,7 @@
 
 # **Gameball NodeJS SDK**
 ---
-This repository contains the open source SDK for integrating Gameball's API into your NodeJs app. The Gameball NodeJS SDK provides convinient access to the Gameball API from applications written in the JavaScript langauage. 
+This repository contains the open source SDK for integrating Gameball's API into your NodeJs app. The Gameball NodeJS SDK provides convenient access to the Gameball API from applications written in the JavaScript langauage. 
 ## Documentation
 ---
 Please refer to the  [Gameball API docs](https://docs.gameball.co).
@@ -11,6 +11,11 @@ You don't need this source code unless you want to modify the SDK. If you just
 want to use the SDK, just run:
 ```js
 npm install gameball
+```
+### Dependencies 
+Download sha1 package using the following command.
+```js
+npm install sha1
 ```
 ## Usage
 ---
